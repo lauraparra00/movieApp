@@ -1,4 +1,4 @@
-#section {
+.section {
     width:100%;
 }
 
@@ -87,11 +87,18 @@ p {
     position: relative;
 }
 
+.genero>img {
+    border-radius: 100px;
+}
+
 .genero>h3 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -72%);
+    color:#2603FB;
+    text-shadow: 0px 0px 7px #D7FF00;
+
 }
 
 .genero>h3:hover {
@@ -100,6 +107,7 @@ p {
     text-decoration: underline;
     text-underline-offset: 1rem;
     transition-duration: 0.3s;
+    text-shadow: 0px 0px 7px #2603FB;
 }
 
 /*----------Footer--------------------*/
