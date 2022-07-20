@@ -1,3 +1,9 @@
+/* 
+========================================== 
+API Urls
+========================================== 
+*/
+
 const POPULAR = 'https://api.themoviedb.org/3/movie/popular/';
 const APIURL = 'https://api.themoviedb.org/3/movie/';
 const KEY = '?api_key=7715948e664c6e129be057fb76a55a6d';
@@ -5,9 +11,16 @@ const IMGURL = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
 const NUMBEROF = 20;
 document.addEventListener( "DOMContentLoaded", getMovies);
 
+/* 
+========================================== 
+Function called at app start getting popular movies 
+========================================== 
+*/
+
 async function getMovies(){
     for(let i = 0; i < NUMBEROF; i++){
         try{
+            /* call api using Url constants */
             const movieData = await fetch (POPULAR + KEY, {
             headers: {
                 'Accept': 'application/json',
@@ -15,15 +28,23 @@ async function getMovies(){
             });
             const movieObj = await movieData.json(); 
             if(!movieObj) throw "empty";
-           
+         
+            /* populate card whith object data */
          createCard(movieObj, i);
         } catch(err) {
             console.log("Input is " + err);
             i--;
         }
     }
+    /* function to add opacity */
     showMain();
 } 
+
+/* 
+========================================== 
+Function called with the search input 
+========================================== 
+*/
 
 async function getMoviesSearch(query){
         try{
@@ -37,22 +58,28 @@ async function getMoviesSearch(query){
             
          for (let i = 0; i<movieSearch.results.length; i++){
              try{
+                 /* control that movie has an image */
                  if(!movieSearch.results[i].poster_path) throw "noImage";
                  createCard(movieSearch, i);
              }
              catch(err){
                 console.log("Input is " + err); 
-             }
-             
-         }
-         
+             }  
+         } 
         } catch(err) {
             console.log("Input is " + err); 
         }
     showMain();
 }
 
+/* 
+========================================== 
+Function to create card and populate with movie data 
+========================================== 
+*/
+
 function createCard(movie, pos){
+    /* create html elements */
     const movieDiv = document.createElement("div"); 
     const imgContainer = document.createElement("div");
     const poster = document.createElement("img");
@@ -64,6 +91,7 @@ function createCard(movie, pos){
     const overviewText = document.createElement("span");
     const description = document.createElement("span");
     
+    /* add classes and data to html elements */
     const movieid = 'id' + movie.results[pos].id;
     document.getElementById('movieContainer').appendChild(movieDiv);
     movieDiv.setAttribute('class', 'movie');
@@ -85,6 +113,12 @@ function showMain(){
 function fadeMain(){
     document.getElementById('movieContainer').removeAttribute('class', 'fadeIn');
 }
+
+/* 
+========================================== 
+Function called on change of search input 
+========================================== 
+*/
 
 function updateResult(query) {
     let movieContainer = document.getElementById('movieContainer');
