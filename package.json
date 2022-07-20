@@ -1,0 +1,19 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "venta de peliculas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriansunye/movieApp.git"
+  },
+  "author": "hackaton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriansunye/movieApp/issues"
+  },
+  "homepage": "https://github.com/adriansunye/movieApp#readme"
+}

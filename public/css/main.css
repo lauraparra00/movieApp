@@ -1,5 +1,5 @@
-.section {
-    width: 100%;
+#section {
+    width:100%;
 }
 /*-------------Intro Web--------------------*/
 
@@ -10,7 +10,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20rem;
+    gap: 20%;
+    padding-bottom: 5rem;
 }
 
 #sec2 {
@@ -21,26 +22,27 @@
 
 /*----------Sección Géneros--------------------*/
 #generos {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-color: #E2EAF2;
-    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2%;
 }
 
 #gen-interior {
     display: flex;
 }
 .genero {
-    border: 1px solid red;
     width: 10rem;
-    height: 10rem;
     text-align: center;
+    margin: 2rem;
 }
 /*----------Footer--------------------*/
 #footer {
     background-color: #2603FB;
     height: 30rem;
+    padding-top: 5rem;
 }
