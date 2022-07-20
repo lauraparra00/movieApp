@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a2a72;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: 3px;
+}
+
+.movieContainer {
+  opacity: 0;    
+  
+}
+
+.fadeIn {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.movie {
+  background-color: #eee;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.movie .imgContainer {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 180px;
+  height: 270px;
+  text-align: center;
+}
+
+.movie .imgContainer img {
+  max-width: 100%;
+}
