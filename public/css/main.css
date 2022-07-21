@@ -1,133 +1,158 @@
  
 
 .section {
-    width:100%;
+  width: 100%;
 }
 
 /* ------------ Fuentes ----------*/
-h1, h2, h3 {
-    font-family: 'Secular One', sans-serif;
-    line-height : 5.5rem;
+h1,
+h2,
+h3 {
+  font-family: "Secular One", sans-serif;
+  line-height: 5.5rem;
 }
 
 p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 #span-show {
-    font-weight: 600;
-    font-style: italic;
-    color:#2603FB;
+  font-weight: 600;
+  font-style: italic;
+  color: #2603fb;
 }
 /*-------------Intro Web--------------------*/
 
 #intro {
-    background-color: #fafdff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 7%;
-    padding-bottom: 10rem;
-    padding-top: 6rem;
-    padding-left:5%;
+  background-color: #fafdff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-left: 5%;
 }
 
-#sec1>h1 {
-    font-size: 5.5rem;
+#sec1 > h1 {
+  font-size: 5rem;
 }
 
 #btn-explore {
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.4rem;
-    color: #D7FF00;
-    border: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 10px;    
-    background: #2603FB;
-    border-radius: 60px;
+  font-family: "Secular One", sans-serif;
+  font-size: 1.4rem;
+  color: #d7ff00;
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 10px;
+  background: #2603fb;
+  border-radius: 60px;
 }
 
 #btn-explore:hover {
-    background-color:#D7FF00;
-    color: #2603FB;
-    transition-duration: 0.6s;
+  background-color: #d7ff00;
+  color: #2603fb;
+  transition-duration: 0.6s;
 }
 
 #numbers-main {
-    background-color:#D7FF00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 25rem;
-    margin-top: 2rem;
-    padding-top: 1rem;
-box-shadow: 20px 20px #2603FB;
+  background-color: #d7ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 25rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  box-shadow: 10px 15px #2603fb;
 }
 
-#numbers-main>div>h1 {
-    font-size: 2.2rem;
+#numbers-main > div > h1 {
+  font-size: 2.2rem;
 }
 
-#numbers-main>div>p {
-    font-size: 1.3rem;
+#numbers-main > div > p {
+  font-size: 1.3rem;
+}
+
+#home-img {
+  border:0;
+  background-color: transparent;
 }
 
 /*----------Sección Géneros--------------------*/
 #generos {
-    background-color: #E2EAF2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  background-color: #e2eaf2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-#generos>h2{
-    background-color: #D7FF00;
-    color: #2603FB;
-    box-shadow: 10px 10px #2603FB;
-    padding: 1rem;
-    margin-bottom: 5rem;
+#generos > h2 {
+  background-color: #d7ff00;
+  color: #2603fb;
+  box-shadow: 10px 10px #2603fb;
+  padding: 1rem;
+  margin-bottom: 5rem;
 }
 #gen-interior {
-    display: flex;
+  display: flex;
 }
 
 .genero {
-    width: 12rem;
-    text-align: center;
-    margin: 1.2rem;
-    position: relative;
+  width: 12rem;
+  text-align: center;
+  margin: 1.2rem;
+  position: relative;
+  cursor:pointer;
 }
 
-.genero>img {
-    border-radius: 100px;
+.genero > img {
+  border-radius: 100px;
 }
 
-.genero>h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    color:#d7ff00;
-    text-shadow: 0px 0px 7px #2603FB;
+.genero > h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: #d7ff00;
+  text-shadow: 0px 0px 7px #2603fb;
+}
 
+.genero:hover {
+  color: #2603fb;
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  transition-duration: 0.3s;
+  text-shadow: 0px 0px 7px #d7ff00;
 }
 
 .genero>h3:hover {
-    color:#2603FB;
+    color: #2603fb;
     font-style: italic;
     text-decoration: underline;
     text-underline-offset: 1rem;
     transition-duration: 0.3s;
-    text-shadow: 0px 0px 7px #d7ff00;
+    text-shadow: 0px 0px 4px #d7ff00;
 }
+
+/* ---------- Linea ------------ */
+
+.line {
+    border-top: 2px dashed black;
+    height: 2px;
+    padding: 0;
+    margin:  auto 0 auto; 
+  }

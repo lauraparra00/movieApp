@@ -32,17 +32,20 @@
 <body>
     <!-------------------Intro Web-------------------->
 <main class="section" id="intro">
-    <div id="sec1"><h1>Bienvenidxs a<br/> Show!</h1>
-    <p>Tu marketplace de películas para <br/>coleccionistas de todos los gustos.<br/>
+    <div class="row justify-content-center">
+    <div id="sec1" class="col-sm-6"><h1>Bienvenidxs a<br/> Show!</h1>
+    <p>Tu marketplace de películas para <br/>coleccionistas de VHS.<br/>
     <span id="span-show">Show must go on!</span></p>
-<button id="btn-explore">Explore Now</button>
+    <a href="/public/index.html"
+    >
+<button id="btn-explore">Explore Now</button></a>
 <div id="numbers-main">
     <div>
-    <h1>48k+</h1>
+    <h1>78k+</h1>
     <p>Películas</p>
 </div>
 <div>
-<h1>98k+</h1>
+<h1>48k+</h1>
 <p>Ventas</p>
 </div>
 <div>
@@ -51,60 +54,97 @@
 </div>
 </div>
 </div>
-<img src="/public/src/media/placeholder-main2.png" width="50%" alt="">
+<div class="col-sm-6">
+<img src="/public/src/media/placeholder-main2.png" id="home-img" class="img-thumbnail" alt="">
+</div>
+</div>
 </main>
+<p class="line"></p>
 <!-------------------Sección Géneros-------------------->
 <section class="section" id="generos">
-    <h2>¿Qué te apetece ver hoy?</h2>
-        <div id="gen-interior">
+    <h2>¡Dime qué buscas y te diré que lo tenemos!</h2>
+        <div id="gen-interior" class="row justify-content-center">
             <a href="index.html?genre=28"> 
                 <div class="genero">
-                    <img src="/public/src/media/action.png" width="100%" alt="">
+                    <img src="/public/src/media/action.png"  class="img-fluid" 
+                     width="100%" alt="">
                     <h3 id="gen-text">Action</h3>
                 </div>
             </a>
+            <a href="index.html?genre=12"> 
         <div class="genero">
-            <img src="/public/src/media/adventure.png" width="100%" alt="">
+            <img src="/public/src/media/adventure.png"  class="img-fluid" 
+            alt="">
             <h3>Adventure</h3>
         </div>
-        <div class="genero">
+        </a>
+        <a href="index.html?genre=16"> 
+        <div class="genero" onClick="getMoviesbyGenres(16)">
             <img src="/public/src/media/animation.png" width="100%" alt="">
             <h3>Animation</h3>
         </div>
-        <div class="genero">
+        </a>
+        <a href="index.html?genre=35"> 
+        <div class="genero" onClick="getMoviesbyGenres(35)">
             <img src="/public/src/media/comedy.png" width="100%" alt="">
             <h3>Comedy</h3>
         </div>
-        <div class="genero">
+        </a>
+        <a href="index.html?genre=99"> 
+        <div class="genero" onClick="getMoviesbyGenres(99)">
             <img src="/public/src/media/documentary.png" width="100%" alt="">
             <h3>Documentary</h3>
         </div>
+        </a>
+        <a href="index.html?genre=18"> 
+            <div class="genero">
+                <img src="/public/src/media/drama.png" width="100%" alt="">
+                <h3>Drama</h3>
+            </div>
+            </a>
+        
     </div>
 
-    <div id="gen-interior">
+    <div id="gen-interior"  class="row justify-content-center">
+        <a href="index.html?genre=10751"> 
         <div class="genero">
             <img src="/public/src/media/family.png" width="100%" alt="">
             <h3>Family</h3>
         </div>
+        </a>
+        <a href="index.html?genre=27"> 
         <div class="genero">
             <img src="/public/src/media/horror.png" width="100%" alt="">
             <h3>Horror</h3>
         </div>
+        </a>
+        <a href="index.html?genre=10749"> 
         <div class="genero">
             <img src="/public/src/media/romance.png" width="100%" alt="">
             <h3>Romance</h3>
         </div>
+        </a>
+        <a href="index.html?genre=878"> 
         <div class="genero">
             <img src="/public/src/media/scifi.png" width="100%" alt="">
             <h3>Sci-Fi</h3>
         </div>
+        </a>
+        <a href="index.html?genre=53"> 
         <div class="genero">
             <img src="/public/src/media/thriller.png" width="100%" alt="">
             <h3>Thriller</h3>
         </div>
+        </a>
+        <a href="index.html?genre=37"> 
+            <div class="genero">
+                <img src="/public/src/media/western.png" width="100%" alt="">
+                <h3>Western</h3>
+            </div>
+            </a>
     </div>
 </section>
-
+<p class="line"></p>
 <!-------------------Footer-------------------->
 <footer>
     <div class="footer">
@@ -112,7 +152,7 @@
         <div class="f1">
             <h3>Navigation</h3>
             <a href="main.html"><p>Index</p></a>
-            <a href="main.html"><p>Explore</p></a>
+            <a href="index.html"><p>Explore</p></a>
             <a href="aboutus.html"><p>Contact</p></a>
         </div>
       
@@ -131,6 +171,6 @@
         </div>
         <p>SHOW© 2022 - Hackaton Factoria F5</p>
     </footer>
-    <script href="./js/script.js"></script>
+
 </body>
 </html>
