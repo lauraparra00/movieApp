@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+.container-compra {
+    display: flex;
+    justify-content: space-around;
+}
+
+.compra {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.compra img {
+    width: 400px;
+    height: 520px;
+}
+
+.container-form {
+    font-size: 1.2rem;
+    margin-top: 5%;
+    margin-right: 400px;
+}
+
+.container-form h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.form-compra {
+    width: 25rem;
+}
+
+.form-input {
+    width: 400px;
+    border: 3px solid #2603FB;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: #000;
+    background: #D7FF00;
+    padding-left: 10px;
+    margin-bottom: 1px;
+    font-size: 16px;
+}
+
+.select {
+    width: 425px;
+    border: 3px solid #2603FB;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background: #D7FF00;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-top: -20px;
+    margin-bottom: -1px;
+}
+
+.label-form {
+    font-size: 20px;
+    margin-left: 17px;
+}
+
+.select-form {
+    margin-top: -25px;
+}
+
+.form-label {
+    position: relative;
+    bottom: 4.5rem;
+    left: 1rem;
+    color: #000;
+    cursor: text;
+}
+
+option {
+    background: #fff;
+}
+
+
+
+.button {
+    background-color: #2603FB;
+    color: #D7FF00;
+    border: solid #2603FB;
+    border-radius: 25px;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 320px;
+}
+
+.button:hover {
+    border: solid #D7FF00;
+    background: #D7FF00;
+    color: #2603FB;
+    transition: 0.3s ease;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
+    .container-compra {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .container-form {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .container-compra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .container-form {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .container-compra {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: auto;
+    }
+}
