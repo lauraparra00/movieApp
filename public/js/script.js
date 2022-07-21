@@ -163,7 +163,7 @@ function createCard(movie, pos) {
     const poster = document.createElement("img");
 
     const name = document.createElement("h4");
-    const genre = document.createElement("h6")
+    const genre = document.createElement("li")
     const buttons = document.createElement("span")
         // const description = document.createElement("input");
         // const favorite = document.createElement("input")
@@ -193,25 +193,25 @@ function createCard(movie, pos) {
 
     document.querySelector('#' + movieid + ' .imgContainer').appendChild(genre);
     let type = movie.results[pos].genre_ids[0]
-    if (type == 28) genre.innerHTML = "-Acción"
-    if (type == 12) genre.innerHTML = "-Aventura"
-    if (type == 16) genre.innerHTML = "-Animada"
-    if (type == 35) genre.innerHTML = "-Comedia"
-    if (type == 80) genre.innerHTML = "-Crimen"
-    if (type == 99) genre.innerHTML = "-Documental"
-    if (type == 18) genre.innerHTML = "-Drama"
-    if (type == 10751) genre.innerHTML = "-Familiar"
-    if (type == 14) genre.innerHTML = "-Fantasía"
+    if (type == 28) genre.innerHTML = "Acción"
+    if (type == 12) genre.innerHTML = "Aventura"
+    if (type == 16) genre.innerHTML = "Animada"
+    if (type == 35) genre.innerHTML = "Comedia"
+    if (type == 80) genre.innerHTML = "Crimen"
+    if (type == 99) genre.innerHTML = "Documental"
+    if (type == 18) genre.innerHTML = "Drama"
+    if (type == 10751) genre.innerHTML = "Familiar"
+    if (type == 14) genre.innerHTML = "Fantasía"
     if (type == 36) genre.innerHTML = "Historia"
-    if (type == 27) genre.innerHTML = "-Terror"
-    if (type == 10402) genre.innerHTML = "-Musical"
-    if (type == 9648) genre.innerHTML = "-Misterio"
-    if (type == 10749) genre.innerHTML = "-Romance"
-    if (type == 878) genre.innerHTML = "-Ciencia Ficción"
-    if (type == 10770) genre.innerHTML = "-Película de TV"
-    if (type == 53) genre.innerHTML = "-Suspenso"
-    if (type == 10752) genre.innerHTML = "-Guerra"
-    if (type == 37) genre.innerHTML = "-Película de vaqueros"
+    if (type == 27) genre.innerHTML = "Terror"
+    if (type == 10402) genre.innerHTML = "Musical"
+    if (type == 9648) genre.innerHTML = "Misterio"
+    if (type == 10749) genre.innerHTML = "Romance"
+    if (type == 878) genre.innerHTML = "Ciencia Ficción"
+    if (type == 10770) genre.innerHTML = "Película de TV"
+    if (type == 53) genre.innerHTML = "Suspenso"
+    if (type == 10752) genre.innerHTML = "Guerra"
+    if (type == 37) genre.innerHTML = "Película de vaqueros"
     genre.innerHTML += " / " + movie.results[pos].release_date
 
     document.querySelector('#' + movieid + ' .imgContainer').appendChild(buttons)
