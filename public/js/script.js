@@ -9,9 +9,25 @@ const APIURL = 'https://api.themoviedb.org/3/movie/';
 const KEY = '?api_key=7715948e664c6e129be057fb76a55a6d';
 const IMGURL = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
 const NUMBEROF = 10;
-/*document.addEventListener( "DOMContentLoaded", getMovies);*/
-document.addEventListener( "DOMContentLoaded", getMoviesbyGenres);
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const genre = urlParams.get('genre')
 
+/*document.addEventListener( "DOMContentLoaded", getMovies);*/
+document.addEventListener( "DOMContentLoaded", getMoviesbyGenres(genre));
+
+
+function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    var fruit = 
 /* 
 ========================================== 
 Function called at app start getting popular movies 
@@ -61,7 +77,7 @@ async function getMovies(){
 17: {id: 10752, name: 'War'}
 18: {id: 37, name: 'Western'} */
 
-async function getMoviesbyGenres(){
+async function getMoviesbyGenres(genre){
     for(let i = 1; i < NUMBEROF ; i++){
         try{
             const movieDataSearch = await fetch ("https://api.themoviedb.org/3/discover/movie"+KEY+"&include_adult=false&page="+i+"&sort_by=revenue.desc&primary_release_year=2007|2006|2005|2004|2003|2002|2001|2000|1999|1998|1997|1996|1995|1994|1993|1992|1991|1990|1989|1988|1987|1986|1985|1984", {
@@ -78,7 +94,7 @@ async function getMoviesbyGenres(){
                 if(!movieSearch.results[j].poster_path) throw "noImage";
                  
                 for(let k = 0; k< movieSearch.results[j].genre_ids.length; k++){
-                    if(movieSearch.results[j].genre_ids[k] == 28){
+                    if(movieSearch.results[j].genre_ids[k] == genre){
                         createCard(movieSearch, j);
                     }
                 };                    
