@@ -35,7 +35,7 @@ p {
 }
 
 #sec1 > h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
 }
 
 #btn-explore {
@@ -79,6 +79,10 @@ p {
   font-size: 1.3rem;
 }
 
+#home-img {
+  border:0;
+  background-color: transparent;
+}
 
 /*----------Sección Géneros--------------------*/
 #generos {

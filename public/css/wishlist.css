@@ -40,6 +40,8 @@ tr:nth-child(odd) {
 #swishlist {
   margin-right: 3%;
   display: grid;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -47,3 +49,12 @@ tr:nth-child(odd) {
   width: 100%;
   max-width: 808px;
 }
+
+/* ---------- Linea ------------ */
+
+.line {
+    border-top: 2px dashed black;
+    height: 2px;
+    padding: 0;
+    margin:  auto 0 auto; 
+  }
