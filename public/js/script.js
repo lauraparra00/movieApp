@@ -9,9 +9,25 @@ const APIURL = 'https://api.themoviedb.org/3/movie/';
 const KEY = '?api_key=7715948e664c6e129be057fb76a55a6d';
 const IMGURL = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
 const NUMBEROF = 10;
-/*document.addEventListener( "DOMContentLoaded", getMovies);*/
-/*document.addEventListener( "DOMContentLoaded", getMoviesbyGenres);*/
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const genre = urlParams.get('genre')
 
+/*document.addEventListener( "DOMContentLoaded", getMovies);*/
+document.addEventListener( "DOMContentLoaded", getMoviesbyGenres(genre));
+
+
+function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    var fruit = 
 /* 
 ========================================== 
 Function called at app start getting popular movies 
