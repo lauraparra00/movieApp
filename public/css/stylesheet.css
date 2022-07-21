@@ -61,3 +61,7 @@ h1 {
 .movie .imgContainer img {
     max-width: 100%;
 }
+
+.movie .imgContainer button {
+    border: none;
+}
