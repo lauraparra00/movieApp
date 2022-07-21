@@ -44,8 +44,7 @@ tr:nth-child(odd) {
     grid-template-columns: repeat(2, 1fr)
   }
 
-  img {
+  #swishlist>img {
     width: 100%;
     max-width: 808px;
   }
-  

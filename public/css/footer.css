@@ -104,3 +104,13 @@ footer {
   .f3 {
     transform: translate(0%, -20%);
   }
+
+    
+  a:link, a:visited {
+    color: #D7FF00;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    color:#fafdff
+  }
