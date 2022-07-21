@@ -45,15 +45,17 @@ h1 {
 }
 
 .movie {
-    background-color: #eee;
+    background-color: white;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
     margin: 10px;
     text-align: center;
-    padding-bottom: 50px;
+    font-family: 'Secular One', sans-serif;
+    padding: 2rem 1.5rem 4rem 1.5rem;
+    border-radius: 50px;
 }
 
 .movie .imgContainer {
-    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Secular One', sans-serif;
     width: 250px;
     height: 400px;
     text-align: center;
@@ -72,15 +74,19 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: 'Secular One', sans-serif;
-    text-shadow: 0.04em 0.03em 0.08em black;
     font-weight: bold;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .movie .imgContainer li {
     margin-left: 5px;
-    text-align: left;
-    font-family: 'Secular One', sans-serif;
-    color: #2603FB;
+    font-family: 'DM Sans', sans-serif;
+    list-style:none;
+    color: black;
     font-weight: bold;
+}
+
+body {
+    background-color: #e2eaf2;
 }
