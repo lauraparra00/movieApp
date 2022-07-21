@@ -8,3 +8,12 @@
 li{
 	list-style:none;
 }
+
+/* ---------- Linea ------------ */
+
+.line {
+    border-top: 2px dashed black;
+    height: 2px;
+    padding: 0;
+    margin:  auto 0 auto; 
+  }

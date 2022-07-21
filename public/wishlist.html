@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <link href="./css/footer.css" rel="stylesheet" type="text/css">
-    <link href="./css/wishlist.css" rel="stylesheet" type="text/css">
-    <link href="./css/navbar.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/wishlist.css" rel="stylesheet" type="text/css" />
+    <link href="./css/navbar.css" rel="stylesheet" type="text/css" />
 
     <link
       rel="stylesheet"
@@ -25,6 +25,25 @@
   </head>
 
   <body>
+    <nav class="header">
+      <a href="main.html"><img src="./src/media/logo.png" width="200px" /></a>
+      <nav class="navbar-main">
+        <a href="main.html">Start</a>
+        <a href="index.html">Explore</a>
+      </nav>
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        oninput="updateResult(this.value)"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="btn-btn">
+        <a class="btn-wish" href="wishlist.html">Wishlist</a>
+        <a class="btn-filled" href="aboutus.html">Contact</a>
+      </div>
+    </nav>
+
     <!-------------------Wishlist-------------------->
 
     <section id="swishlist">

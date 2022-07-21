@@ -1,176 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Secular+One&display=swap" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="./css/footer.css" rel="stylesheet" type="text/css">
-    <link href="./css/navbar.css" rel="stylesheet" type="text/css">
-</head>
-<header class="header">
-    <img src= "./src/media/logo.png" width= "200px"/>
-    <nav class="navbar-main">
-      <a href="main.html">Start</a>
-      <a href="index.html">Explore</a>
-     
-   </nav>
-  </div>
-  <input class="form-control mr-sm-2" type="search" oninput="updateResult(this.value)" placeholder="Search" aria-label="Search">
-    <div class="btn-btn">
-    <a class="btn-wish" href="wishlist.html">Wishlist</a>
-    <a class="btn-filled" href="aboutus.html">Contact</a>
-  </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/navbar.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
+    <nav class="header">
+      <a href="main.html"> <img src="./src/media/logo.png" width="200px" /></a>
+      <nav class="navbar-main">
+        <a href="main.html">Start</a>
+        <a href="index.html">Explore</a>
+      </nav>
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        oninput="updateResult(this.value)"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="btn-btn">
+        <a class="btn-wish" href="wishlist.html">Wishlist</a>
+        <a class="btn-filled" href="aboutus.html">Contact</a>
+      </div>
+    </nav>
+
     <!-------------------Intro Web-------------------->
-<main class="section" id="intro">
-    <div class="row justify-content-center">
-    <div id="sec1" class="col-sm-6"><h1>Bienvenidxs a<br/> Show!</h1>
-    <p>Tu marketplace de películas para <br/>coleccionistas de VHS.<br/>
-    <span id="span-show">Show must go on!</span></p>
-    <a href="/public/index.html"
-    >
-<button id="btn-explore">Explore Now</button></a>
-<div id="numbers-main">
-    <div>
-    <h1>78k+</h1>
-    <p>Películas</p>
-</div>
-<div>
-<h1>48k+</h1>
-<p>Ventas</p>
-</div>
-<div>
-    <h1>30k+</h1>
-    <p>Usuarios</p>
-</div>
-</div>
-</div>
-<div class="col-sm-6">
-<img src="/public/src/media/placeholder-main2.png" id="home-img" class="img-thumbnail" alt="">
-</div>
-</div>
-</main>
-<p class="line"></p>
-<!-------------------Sección Géneros-------------------->
-<section class="section" id="generos">
-    <h2>¡Dime qué buscas y te diré que lo tenemos!</h2>
-        <div id="gen-interior" class="row justify-content-center">
-            <a href="index.html?genre=28"> 
-                <div class="genero">
-                    <img src="/public/src/media/action.png"  class="img-fluid" 
-                     width="100%" alt="">
-                    <h3 id="gen-text">Action</h3>
-                </div>
-            </a>
-            <a href="index.html?genre=12"> 
-        <div class="genero">
-            <img src="/public/src/media/adventure.png"  class="img-fluid" 
-            alt="">
+    <main class="section" id="intro">
+      <div class="row justify-content-center">
+        <div id="sec1" class="col-sm-6">
+          <h1>
+            Bienvenidxs a<br />
+            Show!
+          </h1>
+          <p>
+            Tu marketplace de películas para <br />coleccionistas de VHS.<br />
+            <span id="span-show">Show must go on!</span>
+          </p>
+          <a href="/public/index.html">
+            <button id="btn-explore">Explore Now</button></a
+          >
+          <div id="numbers-main">
+            <div>
+              <h1>78k+</h1>
+              <p>Películas</p>
+            </div>
+            <div>
+              <h1>48k+</h1>
+              <p>Ventas</p>
+            </div>
+            <div>
+              <h1>30k+</h1>
+              <p>Usuarios</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img
+            src="/public/src/media/placeholder-main2.png"
+            id="home-img"
+            class="img-thumbnail"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <p class="line"></p>
+    <!-------------------Sección Géneros-------------------->
+    <section class="section" id="generos">
+      <h2>¡Dime qué buscas y te diré que lo tenemos!</h2>
+      <div id="gen-interior" class="row justify-content-center">
+        <a href="index.html?genre=28">
+          <div class="genero">
+            <img
+              src="/public/src/media/action.png"
+              class="img-fluid"
+              width="100%"
+              alt=""
+            />
+            <h3 id="gen-text">Action</h3>
+          </div>
+        </a>
+        <a href="index.html?genre=12">
+          <div class="genero">
+            <img
+              src="/public/src/media/adventure.png"
+              class="img-fluid"
+              alt=""
+            />
             <h3>Adventure</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=16"> 
-        <div class="genero" onClick="getMoviesbyGenres(16)">
-            <img src="/public/src/media/animation.png" width="100%" alt="">
+        <a href="index.html?genre=16">
+          <div class="genero" onClick="getMoviesbyGenres(16)">
+            <img src="/public/src/media/animation.png" width="100%" alt="" />
             <h3>Animation</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=35"> 
-        <div class="genero" onClick="getMoviesbyGenres(35)">
-            <img src="/public/src/media/comedy.png" width="100%" alt="">
+        <a href="index.html?genre=35">
+          <div class="genero" onClick="getMoviesbyGenres(35)">
+            <img src="/public/src/media/comedy.png" width="100%" alt="" />
             <h3>Comedy</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=99"> 
-        <div class="genero" onClick="getMoviesbyGenres(99)">
-            <img src="/public/src/media/documentary.png" width="100%" alt="">
+        <a href="index.html?genre=99">
+          <div class="genero" onClick="getMoviesbyGenres(99)">
+            <img src="/public/src/media/documentary.png" width="100%" alt="" />
             <h3>Documentary</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=18"> 
-            <div class="genero">
-                <img src="/public/src/media/drama.png" width="100%" alt="">
-                <h3>Drama</h3>
-            </div>
-            </a>
-        
-    </div>
+        <a href="index.html?genre=18">
+          <div class="genero">
+            <img src="/public/src/media/drama.png" width="100%" alt="" />
+            <h3>Drama</h3>
+          </div>
+        </a>
+      </div>
 
-    <div id="gen-interior"  class="row justify-content-center">
-        <a href="index.html?genre=10751"> 
-        <div class="genero">
-            <img src="/public/src/media/family.png" width="100%" alt="">
+      <div id="gen-interior" class="row justify-content-center">
+        <a href="index.html?genre=10751">
+          <div class="genero">
+            <img src="/public/src/media/family.png" width="100%" alt="" />
             <h3>Family</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=27"> 
-        <div class="genero">
-            <img src="/public/src/media/horror.png" width="100%" alt="">
+        <a href="index.html?genre=27">
+          <div class="genero">
+            <img src="/public/src/media/horror.png" width="100%" alt="" />
             <h3>Horror</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=10749"> 
-        <div class="genero">
-            <img src="/public/src/media/romance.png" width="100%" alt="">
+        <a href="index.html?genre=10749">
+          <div class="genero">
+            <img src="/public/src/media/romance.png" width="100%" alt="" />
             <h3>Romance</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=878"> 
-        <div class="genero">
-            <img src="/public/src/media/scifi.png" width="100%" alt="">
+        <a href="index.html?genre=878">
+          <div class="genero">
+            <img src="/public/src/media/scifi.png" width="100%" alt="" />
             <h3>Sci-Fi</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=53"> 
-        <div class="genero">
-            <img src="/public/src/media/thriller.png" width="100%" alt="">
+        <a href="index.html?genre=53">
+          <div class="genero">
+            <img src="/public/src/media/thriller.png" width="100%" alt="" />
             <h3>Thriller</h3>
-        </div>
+          </div>
         </a>
-        <a href="index.html?genre=37"> 
-            <div class="genero">
-                <img src="/public/src/media/western.png" width="100%" alt="">
-                <h3>Western</h3>
-            </div>
-            </a>
-    </div>
-</section>
-<p class="line"></p>
-<!-------------------Footer-------------------->
-<footer>
-    <div class="footer">
-    
+        <a href="index.html?genre=37">
+          <div class="genero">
+            <img src="/public/src/media/western.png" width="100%" alt="" />
+            <h3>Western</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <p class="line"></p>
+    <!-------------------Footer-------------------->
+    <footer>
+      <div class="footer">
         <div class="f1">
-            <h3>Navigation</h3>
-            <a href="main.html"><p>Index</p></a>
-            <a href="index.html"><p>Explore</p></a>
-            <a href="aboutus.html"><p>Contact</p></a>
+          <h3>Navigation</h3>
+          <a href="main.html"><p>Index</p></a>
+          <a href="index.html"><p>Explore</p></a>
+          <a href="aboutus.html"><p>Contact</p></a>
         </div>
-      
-        <div class="f2">
-            <form id="footerf">
-                <h2>Subscribe to our Newsletter!</h2>
-                <input type="text" id="fmail" name="fmail"><br>
-            </form>
-        </div>
-      
-        <div class="f3">
-            <a href="https://factoriaf5.org/"><img src="./src/media/factoria-logo.png" width="200px" alt=""></a>
-            <a href="https://www.thoughtworks.com/"><img src="./src/media/thoughtworks-logo.png" width="200px"  alt=""></a>
-        </div>
-      
-        </div>
-        <p>SHOW© 2022 - Hackaton Factoria F5</p>
-    </footer>
 
-</body>
+        <div class="f2">
+          <form id="footerf">
+            <h2>Subscribe to our Newsletter!</h2>
+            <input type="text" id="fmail" name="fmail" /><br />
+          </form>
+        </div>
+
+        <div class="f3">
+          <a href="https://factoriaf5.org/"
+            ><img src="./src/media/factoria-logo.png" width="200px" alt=""
+          /></a>
+          <a href="https://www.thoughtworks.com/"
+            ><img src="./src/media/thoughtworks-logo.png" width="200px" alt=""
+          /></a>
+        </div>
+      </div>
+      <p>SHOW© 2022 - Hackaton Factoria F5</p>
+    </footer>
+  </body>
 </html>

@@ -29,7 +29,7 @@ footer > p {
 .f2 {
   padding-bottom: 4rem;
   padding-top: 4rem;
-  transform: translate(0%, -20%);
+  transform: translate(0%, 0%);
 }
 
 #footerf {
@@ -50,13 +50,13 @@ footer > p {
   transform: translate(0%, -20%);
 }
 
-a:link,
-a:visited {
+.f1>a:link,
+.f1>a:visited {
   color: #d7ff00;
   text-decoration: none;
 }
 
-a:hover,
-a:active {
+.f1>a:hover,
+.f1>a:active {
   color: #fafdff;
 }

@@ -82,3 +82,12 @@ background-color:white;
     border-radius: 50px;
     border: 0;
 }
+
+/* ---------- Linea ------------ */
+
+.line {
+    border-top: 2px dashed black;
+    height: 2px;
+    padding: 0;
+    margin:  auto 0 auto; 
+  }

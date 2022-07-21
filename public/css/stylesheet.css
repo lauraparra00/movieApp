@@ -47,11 +47,12 @@ h1 {
 .movie {
     background-color: white;
     box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
-    margin: 10px;
+    margin: 1.5rem;
     text-align: center;
     font-family: 'Secular One', sans-serif;
-    padding: 2rem 1.5rem 4rem 1.5rem;
+    padding: 2rem 1.5rem 6rem 1.5rem;
     border-radius: 50px;
+    cursor:pointer;
 }
 
 .movie .imgContainer {
@@ -63,11 +64,17 @@ h1 {
 
 .movie .imgContainer img {
     max-width: 100%;
+    border-radius: 30px;
 }
 
 .movie .imgContainer button {
     border: none;
+    background-color: #2603fb;
+    padding: 0.3rem;
+    border-radius: 80px;
+    width: 2rem;
 }
+
 
 .movie .imgContainer h4 {
     white-space: nowrap;
@@ -81,6 +88,7 @@ h1 {
 
 .movie .imgContainer li {
     margin-left: 5px;
+    padding-bottom: 0.5rem;
     font-family: 'DM Sans', sans-serif;
     list-style:none;
     color: black;
