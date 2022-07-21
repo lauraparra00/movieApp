@@ -1,9 +1,30 @@
 .general{
-    padding-top: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
    
 }
 .espacio{
     padding-top: 25px;
+    padding-left: 2rem;
+}
+
+.title-movie {
+    font-size: 4rem;
+}
+
+.year-movie {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Secular One', sans-serif;
+    color: grey;
+}
+
+.description-movie {
+    font-size: 1.3rem;
+}
+
+.espacio>img {
+    max-height: 40rem;
 }
 
 #btn-explore {
@@ -20,11 +41,17 @@
 }
 li{
 	list-style:none;
+    font-size: 1.5rem;
+}
+
+tr {
+    font-family: 'Secular One', sans-serif;
+
 }
 .carrito{
 border: 0;
 color:#2603FB;
-background-color:white;
+background-color: transparent;
 }
 #btn-explore:hover {
     background-color:#D7FF00;
@@ -38,6 +65,10 @@ background-color:white;
     color: #2603FB;
     border: 0;
 }
+
+tr:nth-child(odd) {
+    background-color: #d7ff00;
+  }
 
 /*----------Footer--------------------*/
 #footer {

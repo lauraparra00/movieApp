@@ -29,12 +29,24 @@ p {
   justify-content: center;
   align-items: center;
   gap: 7%;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 #sec1 > h1 {
   padding-top: 3rem;
-  font-size: 5rem;
+  font-size: 4.5rem;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#sec1 > p {
+  font-size: 1.3rem;
+}
+
+#sec1 {
+  transform: translate(3%, 0%);
 }
 
 #btn-explore {
@@ -52,10 +64,11 @@ p {
   border-radius: 60px;
 }
 
-#btn-explore:hover {
+#btn-explore:hover, #btn-explore:active, #btn-explore:visited {
   background-color: #d7ff00;
   color: #2603fb;
   transition-duration: 0.6s;
+  text-decoration: none;
 }
 
 #numbers-main {
@@ -76,6 +89,7 @@ p {
 
 #numbers-main > div > p {
   font-size: 1.3rem;
+  margin-top: -2rem;
 }
 
 #home-img {
@@ -92,7 +106,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1%;
-  padding-top: 10rem;
+  padding-top: 6rem;
   padding-bottom: 10rem;
 }
 
@@ -139,7 +153,6 @@ p {
 }
 
 .genero>h3:hover {
-    color: #2603fb;
     font-style: italic;
     text-decoration: underline;
     text-underline-offset: 1rem;

@@ -26,13 +26,6 @@
   font-family: "DM Sans", sans-serif;
 }
 
-.table-responsive > h1 {
-  padding-bottom: 2rem;
-  font-size: 3.5rem;
-  text-decoration: underline;
-  text-underline-offset: 0.7rem;
-}
-
 tr:nth-child(odd) {
   background-color: #d7ff00;
 }
@@ -48,6 +41,16 @@ tr:nth-child(odd) {
 #swishlist > img {
   width: 100%;
   max-width: 808px;
+}
+
+#wtable {
+  width: 80%;
+  min-width: 20rem;
+}
+.grid>h1{
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  font-size: 4rem;
 }
 
 /* ---------- Linea ------------ */

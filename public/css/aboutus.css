@@ -36,6 +36,11 @@ p {
 span {
 color:  grey;}
 
+h1 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
 /* ---------- Linea ------------ */
 
 .line {
