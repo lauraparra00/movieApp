@@ -68,7 +68,7 @@ p {
   width: 25rem;
   margin-top: 2rem;
   padding-top: 1rem;
-  box-shadow: 20px 20px #2603fb;
+  box-shadow: 10px 15px #2603fb;
 }
 
 #numbers-main > div > h1 {
@@ -78,6 +78,7 @@ p {
 #numbers-main > div > p {
   font-size: 1.3rem;
 }
+
 
 /*----------Sección Géneros--------------------*/
 #generos {
@@ -107,6 +108,7 @@ p {
   text-align: center;
   margin: 1.2rem;
   position: relative;
+  cursor:pointer;
 }
 
 .genero > img {
@@ -122,7 +124,7 @@ p {
   text-shadow: 0px 0px 7px #2603fb;
 }
 
-.genero > h3:hover {
+.genero:hover {
   color: #2603fb;
   font-style: italic;
   text-decoration: underline;
@@ -130,3 +132,21 @@ p {
   transition-duration: 0.3s;
   text-shadow: 0px 0px 7px #d7ff00;
 }
+
+.genero>h3:hover {
+    color: #2603fb;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    transition-duration: 0.3s;
+    text-shadow: 0px 0px 4px #d7ff00;
+}
+
+/* ---------- Linea ------------ */
+
+.line {
+    border-top: 2px dashed black;
+    height: 2px;
+    padding: 0;
+    margin:  auto 0 auto; 
+  }
