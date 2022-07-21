@@ -8,7 +8,7 @@ const POPULAR = 'https://api.themoviedb.org/3/movie/popular/';
 const APIURL = 'https://api.themoviedb.org/3/movie/';
 const KEY = '?api_key=7715948e664c6e129be057fb76a55a6d';
 const IMGURL = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
-const NUMBEROF = 10;
+const NUMBEROF = 25;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const genre = urlParams.get('genre')
@@ -16,18 +16,6 @@ const genre = urlParams.get('genre')
 /*document.addEventListener( "DOMContentLoaded", getMovies);*/
 document.addEventListener( "DOMContentLoaded", getMoviesbyGenres(genre));
 
-
-function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    var fruit = 
 /* 
 ========================================== 
 Function called at app start getting popular movies 
@@ -145,35 +133,13 @@ async function getMoviesSearch(query){
 
 /* 
 ========================================== 
-Function to get specific movie data 
-========================================== 
-*/
-
-async function getMovie(movieid){
-        try{
-            const movieData = await fetch ("https://api.themoviedb.org/3/movie/"+ movieid + KEY +"&language=en-US", {
-            headers: {
-                'Accept': 'application/json',
-                }
-            });
-            const movieObj = await movieData.json(); 
-            if(!movieSearch) throw "empty";
-   
-             createMovie(movieObj); 
-        } catch(err) {
-            console.log("Input is " + err); 
-        }
-    
-}
-
-/* 
-========================================== 
 Function to create card and populate with movie data 
 ========================================== 
 */
 
 function createCard(movie, pos){
     /* create html elements */
+    const anchor = document.createElement("a");
     const movieDiv = document.createElement("div"); 
     const imgContainer = document.createElement("div");
     const poster = document.createElement("img");
@@ -187,7 +153,10 @@ function createCard(movie, pos){
     
     /* add classes and data to html elements */
     const movieid = 'id' + movie.results[pos].id;
-    document.getElementById('movieContainer').appendChild(movieDiv);
+    document.getElementById('movieContainer').appendChild(anchor);
+    anchor.setAttribute('href', "detalle.html?movie=" + movie.results[pos].id); 
+    
+    anchor.appendChild(movieDiv);
     movieDiv.setAttribute('class', 'movie');
     
     movieDiv.setAttribute('id', movieid);
@@ -206,16 +175,6 @@ function showMain(){
 
 function fadeMain(){
     document.getElementById('movieContainer').removeAttribute('class', 'fadeIn');
-}
-
-/* 
-========================================== 
-Function to populate movie data 
-========================================== 
-*/
-
-function createMovie(movie){
-    
 }
 
 /* 

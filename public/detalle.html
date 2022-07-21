@@ -17,33 +17,28 @@
 
 <body>
 
-	<div class="general">
+	<div class="general" id="content">
 		<div class="row justify-content-center">
 				<!--foto-->	
 				<div class="col-md-4">
-					<div class="espacio">
-					  	<img src="./src/media/detalle.png" class="img-fluid rounded">
+					<div class="espacio movieImg">
+					  	<img class="img-fluid rounded img-movie">
 					</div>
 				</div>
 				<!--Fin foto-->	
 				<!--Descripcion-->
 				<div class="col-md-4">
-				  		<div class="espacio"> 
+				  		<div class="espacio movieData"> 
 				    	
-							<h1 >Título Película</h1>
+							<h1 class="title-movie"></h1>
 							<ul>
-								<li>Director:</li>
-								<li>Año:</li>
+								<li class="director-movie"></li>
+								<li class="year-movie"></li>
 							</ul>
 
 								<div class="row row-cols-auto">
 									<!--descripcion-->
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
-									the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-									the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-									software like Aldus PageMaker including versions of Lorem Ipsum.
+									<p class="description-movie">
 									</p>							
 				  				</div>
 
@@ -55,44 +50,44 @@
 								<!--Tabla-->
 								<div class="table-responsive">
 								  <table class="table">
-								  	  
-									    <td class="usuario">Usuario</td>
-									    <td>Bandera</td>
-									    <td>Precio</td>
+								  	  <tr>
+									    <td id="user0"></td>
+									    <td id="region0"></td>
+									    <td id="price0"></td>
 									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
 
 									  <tr>
-									    <td class="usuario">Usuario</td>
-									    <td>Bandera</td>
-									    <td>Precio</td>
+									    <td id="user1"></td>
+									    <td id="region1"></td>
+									    <td id="price1"></td>
 									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
 									  <tr>
-									    <td class="usuario">Usuario</td>
-									    <td>Bandera</td>
-									    <td>Precio</td>
+									    <td id="user2"></td>
+									    <td id="region2"></td>
+									    <td id="price2"></td>
 									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
 									  <tr>
-									    <td class="usuario">Usuario</td>
-									    <td>Bandera</td>
-									    <td>Precio</td>
+									    <td id="user3"></td>
+									    <td id="region3"></td>
+									    <td id="price3"></td>
 									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
 									  <tr>
-									    <td class="usuario">Usuario</td>
-									    <td>Bandera</td>
-									    <td>Precio</td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16"height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="user4"></td>
+									    <td id="region4"></td>
+									    <td id="price4"></td>
+									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -123,6 +118,7 @@
     <p>SHOW© 2022 - Hackaton Factoria F5</p>
 </footer>
 </div>
+<script src="./js/detalle.js"></script>
 </body>
 </html>
 
