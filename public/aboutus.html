@@ -1,57 +1,139 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Detalles</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-	<!-- Place your stylesheet here-->
-    <link rel="stylesheet" type="text/css" href="./css/aboutus.css" media="all" />
+    <!-- Place your stylesheet here-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/aboutus.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/footer.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/navbar.css"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
+  <body>
+    <nav class="header">
+      <a href="main.html"><img src="./src/media/logo.png" width="200px" /></a>
+      <nav class="navbar-main">
+        <a href="main.html">Start</a>
+        <a href="index.html">Explore</a>
+      </nav>
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        oninput="updateResult(this.value)"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="btn-btn">
+        <a class="btn-wish" href="wishlist.html">Wishlist</a>
+        <a class="btn-filled" href="aboutus.html">Contact</a>
+      </div>
+    </nav>
 
-	<div class="general">
-		<div class="row justify-content-center">
-				<!--foto-->	
-				<div class="col-md-4">
-					<div class="espacio">
-					  	<img src="./src/media/equiposf.png" class="img-fluid rounded">
-					</div>
-				</div>
-				<!--Fin foto-->	
-				<!--Descripcion-->
-				<div class="col-md-4">
-				  		<div class="espacio"> 
-				    	
-							<h1 >Nuestro Equipo</h1>
-							<ul>
-								<li>Andres</li>
-								<li>Rosa</li>
-								<li>Eva</li>
-								<li>Carmen</li>
-								<li>Maria</li>
-								<li>Raquel</li>
-							</ul>
+    <div class="general">
+      <div class="row justify-content-center">
+        <!--foto-->
+        <div class="col-md-4">
+          <div class="espacio">
+            <img src="./src/media/equiposf.png" class="img-fluid rounded" />
+          </div>
+        </div>
+        <!--Fin foto-->
+        <!--Descripcion-->
+        <div class="col-md-4">
+          <div class="espacio">
+            <h1>Nuestro Equipo</h1>
+            <ul>
+              <li>Andres</li>
+              <li>Rosa</li>
+              <li>Eva</li>
+              <li>Carmen</li>
+              <li>Maria</li>
+              <li>Raquel</li>
+            </ul>
 
-								<div class="row row-cols-auto">
-									<!--descripcion-->
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
-									the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-									the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-									software like Aldus PageMaker including versions of Lorem Ipsum.
-									</p>							
-				  				</div>
-						</div><!--Fin espacio-->		
-				</div><!--Fin col-md-4-->
-		</div><!--Fin row justify-content-center-->			
-	</div><!--fin general-->
-	
+            <div class="row row-cols-auto">
+              <!--descripcion-->
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+          <!--Fin espacio-->
+        </div>
+        <!--Fin col-md-4-->
+      </div>
+      <!--Fin row justify-content-center-->
+    </div>
+    <!--fin general-->
 
+    <p class="line"></p>
+    <!-------------------Footer-------------------->
+    <footer>
+      <div class="footer">
+        <div class="f1">
+          <h3>Navigation</h3>
+          <a href="main.html"><p>Index</p></a>
+          <a href="index.html"><p>Explore</p></a>
+          <a href="aboutus.html"><p>Contact</p></a>
+        </div>
+
+        <div class="f2">
+          <form id="footerf">
+            <h2>Subscribe to our Newsletter!</h2>
+            <input type="text" id="fmail" name="fmail" /><br />
+          </form>
+        </div>
+        <div class="f3">
+          <a href="https://factoriaf5.org/"
+            ><img src="./src/media/factoria-logo.png" width="200px" alt=""
+          /></a>
+          <a href="https://www.thoughtworks.com/"
+            ><img src="./src/media/thoughtworks-logo.png" width="200px" alt=""
+          /></a>
+        </div>
+      </div>
+      <p>SHOW© 2022 - Hackaton Factoria F5</p>
+    </footer>
+  </body>
+</html>
