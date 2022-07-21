@@ -87,6 +87,30 @@ footer {
 
   }
 
+  #footerf {
+    color: #D7FF00;
+    padding: -1rem;
+}
+
+#fmail {
+    width: 20rem;
+    height: 3rem;
+    background-color: #D7FF00;
+    border-radius: 50px;
+    border: 0;
+    padding: 1rem;
+}
+
   .f3 {
     transform: translate(0%, -20%);
+  }
+
+    
+  a:link, a:visited {
+    color: #D7FF00;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    color:#fafdff
   }
