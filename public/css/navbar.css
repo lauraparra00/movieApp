@@ -1,12 +1,80 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header{
     background-color: #2603FB;
-    height: 100px;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
+.logo-brand{
+    color:aliceblue;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+.logo-brand span{
+    color: yellow;
+    
+}
+.navbar-main{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+.navbar-main a{
+    text-decoration: none;
+    margin: 10px;
+    width: fit-content;
+    color:aliceblue;
+   
+}
+.btn-filled{
+    background-color: rgba(60, 118, 224, 0.24) ;
+    color: #D7FF00;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid yellow;
+    padding: 10px 15px;
+   
+    
+}
+
+.btn-wish{
+    background-color:#D7FF00 ;
+    color: #2603FB;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 1px solid #D7FF00;
+    padding: 10px 15px;
+}
+a{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+input{
+    border: 3px solid #D7FF00;
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0px 10px;
+  
+}
+
+.btn-btn{
+   width: 33%;
+   display: flex;
+   justify-content: space-around;
+   margin-right: 2rem;
+   
+}
+
