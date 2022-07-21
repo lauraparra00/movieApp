@@ -8,18 +8,47 @@ const POPULAR = 'https://api.themoviedb.org/3/movie/popular/';
 const APIURL = 'https://api.themoviedb.org/3/movie/';
 const KEY = '?api_key=7715948e664c6e129be057fb76a55a6d';
 const IMGURL = 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2';
+<<<<<<< HEAD
 const NUMBEROF = 20;
 document.addEventListener("DOMContentLoaded", getMovies);
+=======
+const NUMBEROF = 10;
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const genre = urlParams.get('genre')
+>>>>>>> develop
 
+/*document.addEventListener( "DOMContentLoaded", getMovies);*/
+document.addEventListener( "DOMContentLoaded", getMoviesbyGenres(genre));
+
+
+function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    var fruit = 
 /* 
 ========================================== 
 Function called at app start getting popular movies 
 ========================================== 
 */
+<<<<<<< HEAD
 
 async function getMovies() {
     for (let i = 0; i < NUMBEROF; i++) {
         try {
+=======
+ 
+async function getMovies(){
+    for(let i = 0; i < NUMBEROF; i++){
+        try{
+>>>>>>> develop
             /* call api using Url constants */
             const movieData = await fetch(POPULAR + KEY, {
                 headers: {
@@ -40,6 +69,59 @@ async function getMovies() {
     showMain();
 }
 
+/* 0: {id: 28, name: 'Action'}
+1: {id: 12, name: 'Adventure'}
+2: {id: 16, name: 'Animation'}
+3: {id: 35, name: 'Comedy'}
+4: {id: 80, name: 'Crime'}
+5: {id: 99, name: 'Documentary'}
+6: {id: 18, name: 'Drama'}
+7: {id: 10751, name: 'Family'}
+8: {id: 14, name: 'Fantasy'}
+9: {id: 36, name: 'History'}
+10: {id: 27, name: 'Horror'}
+11: {id: 10402, name: 'Music'}
+12: {id: 9648, name: 'Mystery'}
+13: {id: 10749, name: 'Romance'}
+14: {id: 878, name: 'Science Fiction'}
+15: {id: 10770, name: 'TV Movie'}
+16: {id: 53, name: 'Thriller'}
+17: {id: 10752, name: 'War'}
+18: {id: 37, name: 'Western'} */
+
+async function getMoviesbyGenres(genre){
+    for(let i = 1; i < NUMBEROF ; i++){
+        try{
+            const movieDataSearch = await fetch ("https://api.themoviedb.org/3/discover/movie"+KEY+"&include_adult=false&page="+i+"&sort_by=revenue.desc&primary_release_year=2007|2006|2005|2004|2003|2002|2001|2000|1999|1998|1997|1996|1995|1994|1993|1992|1991|1990|1989|1988|1987|1986|1985|1984", {
+            headers: {
+                'Accept': 'application/json',
+                }
+            });
+            const movieSearch = await movieDataSearch.json(); 
+            if(!movieSearch) throw "empty";
+            
+         for (let j = 0; j<movieSearch.results.length; j++){
+             try{
+                 /* control that movie has an image */
+                if(!movieSearch.results[j].poster_path) throw "noImage";
+                 
+                for(let k = 0; k< movieSearch.results[j].genre_ids.length; k++){
+                    if(movieSearch.results[j].genre_ids[k] == genre){
+                        createCard(movieSearch, j);
+                    }
+                };                    
+             }
+             catch(err){
+                console.log("Input is " + err); 
+             }  
+         } 
+        } catch(err) {
+            console.log("Input is " + err); 
+        }
+    }   
+    showMain();
+}
+
 /* 
 ========================================== 
 Function called with the search input 
@@ -51,6 +133,7 @@ async function getMoviesSearch(query) {
         const movieDataSearch = await fetch("https://api.themoviedb.org/3/search/movie" + KEY + "&language=en-US&page=1&include_adult=false&page=1&query=" + query, {
             headers: {
                 'Accept': 'application/json',
+<<<<<<< HEAD
             }
         });
         const movieSearch = await movieDataSearch.json();
@@ -64,11 +147,54 @@ async function getMoviesSearch(query) {
             } catch (err) {
                 console.log("Input is " + err);
             }
+=======
+                }
+            });
+            const movieSearch = await movieDataSearch.json(); 
+            if(!movieSearch) throw "empty";
+            
+         for (let i = 0; i<movieSearch.results.length; i++){
+             try{
+                 /* control that movie has an image */
+                 if(!movieSearch.results[i].poster_path) throw "noImage";
+                 createCard(movieSearch, i);
+             }
+             catch(err){
+                console.log("Input is " + err); 
+             }  
+         } 
+        
+        } catch(err) {
+            console.log("Input is " + err); 
+>>>>>>> develop
         }
     } catch (err) {
         console.log("Input is " + err);
     }
     showMain();
+}
+
+/* 
+========================================== 
+Function to get specific movie data 
+========================================== 
+*/
+
+async function getMovie(movieid){
+        try{
+            const movieData = await fetch ("https://api.themoviedb.org/3/movie/"+ movieid + KEY +"&language=en-US", {
+            headers: {
+                'Accept': 'application/json',
+                }
+            });
+            const movieObj = await movieData.json(); 
+            if(!movieSearch) throw "empty";
+   
+             createMovie(movieObj); 
+        } catch(err) {
+            console.log("Input is " + err); 
+        }
+    
 }
 
 /* 
@@ -162,6 +288,16 @@ function showMain() {
 
 function fadeMain() {
     document.getElementById('movieContainer').removeAttribute('class', 'fadeIn');
+}
+
+/* 
+========================================== 
+Function to populate movie data 
+========================================== 
+*/
+
+function createMovie(movie){
+    
 }
 
 /* 
