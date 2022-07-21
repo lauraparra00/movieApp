@@ -141,13 +141,10 @@ function createCard(movie, pos) {
                         <input type="button" onclick="location.href='http://google.com';" value="más info"/>
                          
     `
-
-
-
-    // document.querySelector('#' + movieid + ' .imgContainer').appendChild(description)
-    // description.setAttribute('type', 'button')
-    // description.setAttribute('onclick', "location.href='http://google.com';")
-    // description.setAttribute('value', "más info")
+        // document.querySelector('#' + movieid + ' .imgContainer').appendChild(description)
+        // description.setAttribute('type', 'button')
+        // description.setAttribute('onclick', "location.href='http://google.com';")
+        // description.setAttribute('value', "más info")
 
     //document.querySelector('#' + movied + '.imgContainer').appendChild()
 
