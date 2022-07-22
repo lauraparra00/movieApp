@@ -21,22 +21,46 @@
 
 
 <body>
-
-
+    
     <nav class="header">
-		<a href="main.html"><img src= "./src/media/logo.png" width= "200px"/></a>
-        <nav class="navbar-main">
-          <a href="main.html">Start</a>
-          <a href="index.html">Explore</a>
-       </nav>
-      <input class="form-control mr-sm-2" type="search" oninput="updateResult(this.value)" placeholder="Search" aria-label="Search">
-        <div class="btn-btn">
+      <a href="main.html"> <img src="./src/media/logo.png" width="200px" /></a>
+      <nav class="navbar-main">
+        <a href="index.html?genre=28">Explore</a>
+      </nav>
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        oninput="updateResult(this.value)"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <div class="btn-btn">
         <a class="btn-wish" href="wishlist.html">Wishlist</a>
         <a class="btn-filled" href="aboutus.html">Contact</a>
       </div>
     </nav>
+    
+    <!-- Insert Comment Here <nav class="navbar navbar-expand-lg header">
+  <a class="navbar-brand" href="main.html"><img src= "./src/media/logo.png" width= "200px"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	<div class="general" id="content">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Explore</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" oninput="updateResult(this.value)" placeholder="Search" aria-label="Search">
+      <a class="btn-wish" href="wishlist.html">Wishlist</a>
+      <a class="btn-filled" href="aboutus.html">Contact</a>
+    </form>
+  </div>
+</nav>-->
+
+	<div class="general container" id="content">
 
 		<div class="row justify-content-center">
 				<!--foto-->	
@@ -74,7 +98,7 @@
 									    <td id="user0"></td>
 									    <td id="region0"></td>
 									    <td id="price0"></td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="compra0"><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -83,7 +107,7 @@
 									    <td id="user1"></td>
 									    <td id="region1"></td>
 									    <td id="price1"></td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="compra1"><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -91,7 +115,7 @@
 									    <td id="user2"></td>
 									    <td id="region2"></td>
 									    <td id="price2"></td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="compra2"><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -99,7 +123,7 @@
 									    <td id="user3"></td>
 									    <td id="region3"></td>
 									    <td id="price3"></td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="compra3"><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -107,7 +131,7 @@
 									    <td id="user4"></td>
 									    <td id="region4"></td>
 									    <td id="price4"></td>
-									    <td><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+									    <td id="compra4"><button class="carrito"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									  	<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 										</svg></button></td>
 									  </tr>
@@ -120,9 +144,9 @@
 		</div><!--Fin row justify-content-center-->			
 	</div><!--fin general-->
 	
-	<p class="line"></p>
+	<p class="line mt-5"></p>
 <!-------------------Footer-------------------->
-<footer>
+<footer >
 	<div class="footer">
 	  <div class="f1">
 		<h3>Navigation</h3>
@@ -149,6 +173,22 @@
 	</div>
 	<p>SHOW© 2022 - Hackaton Factoria F5</p>
   </footer>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 <script src="./js/detalle.js"></script>
 </body>
 </html>

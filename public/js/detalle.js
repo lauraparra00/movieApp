@@ -99,6 +99,7 @@ function createTable(){
         document.getElementById('user' + i).innerHTML = users[pos].id;
         document.getElementById('region' + i).innerHTML = users[pos].region;
         document.getElementById('price' + i).innerHTML = price + '€';
+        document.querySelector('#compra' + i + "button").setAttribute =('href', "compra.html?poster=" + movie.poster_path);
     }
     
 }
