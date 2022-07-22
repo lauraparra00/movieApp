@@ -19,33 +19,33 @@
 
   <body>
     <nav class="header">
-      <a href="main.html"> <img src="./src/media/logo.png" width="200px" /></a>
-      <nav class="navbar-main">
-        <a href="main.html">Start</a>
-        <a href="index.html">Explore</a>
+        <a href="main.html"> <img src="./src/media/logo.png" width="200px" /></a>
+        <nav class="navbar-main">
+          <a href="main.html">Start</a>
+          <a href="index.html">Explore</a>
+        </nav>
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          oninput="updateResult(this.value)"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <div class="btn-btn">
+          <a class="btn-wish" href="wishlist.html">Wishlist</a>
+          <a class="btn-filled" href="aboutus.html">Contact</a>
+        </div>
       </nav>
-      <input
-        class="form-control mr-sm-2"
-        type="search"
-        oninput="updateResult(this.value)"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <div class="btn-btn">
-        <a class="btn-wish" href="wishlist.html">Wishlist</a>
-        <a class="btn-filled" href="aboutus.html">Contact</a>
-      </div>
-    </nav>
 
     <div class="container-compra">
       <div class="compra">
         <div class="foto-compra">
-          <img src="./src/media/compra.png" alt="" />
+          <img src="./src/media/wishlist.png" alt="" />
         </div>
       </div>
 
       <div class="container-form">
-        <h2>Compra</h2>
+        <h2>💸 Compra</h2>
         <form class="form-compra">
           <div class="form-group">
             <input type="text" class="form-input" />
@@ -57,15 +57,16 @@
           </div>
           <div class="form-group">
             <input type="text" class="form-input" />
-            <label for="address" class="form-label">Dirección</label>
+            <label for="address" class="form-label">Teléfono</label>
           </div>
           <div class="select-form">
             <label for="method" class="label-form">Métodos de pago</label>
             <select name="metodo de pago" id="" class="select">
-              <option value="1" class="options">Mediante tarjeta</option>
+              <option value="1" class="options">Tarjeta de crédito</option>
               <option value="2" class="options">Bizum</option>
               <option value="3" class="options">PayPal</option>
               <option value="4" class="options">Transferencia bancaria</option>
+              <option value="5" class="options">Presencial</option>
             </select>
           </div>
           <button type="submit" class="button">Comprar</button>

@@ -15,10 +15,7 @@
     margin-left: 70px;
 }
 
-.compra img {
-    width: 400px;
-    height: 520px;
-}
+
 
 .container-form {
     font-size: 1.2rem;
@@ -29,6 +26,7 @@
 .container-form h2 {
     font-size: 50px;
     margin-bottom: 50px;
+    font-size: 3.5rem;
 }
 
 .form-compra {
@@ -36,28 +34,30 @@
 }
 
 .form-input {
-    width: 400px;
-    border: 3px solid #2603FB;
+    width: 425px;
+    border: 2px solid #2603FB;
     border-radius: 20px;
     padding: 0.5rem;
     color: #000;
     background: #D7FF00;
     padding-left: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 8px;
     font-size: 16px;
 }
 
 .select {
     width: 425px;
-    border: 3px solid #2603FB;
+    border: 2px solid #2603FB;
     border-radius: 20px;
     padding: 0.5rem;
+    padding-left: 1rem;
     background: #D7FF00;
     font-size: 16px;
+    font-style: italic;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 50px;
     margin-left: 1rem;
     margin-top: -20px;
     margin-bottom: -1px;
@@ -78,6 +78,7 @@ h3 {
     left: 1rem;
     color: #000;
     cursor: text;
+    padding-bottom: 2rem;
 }
 
 option {
@@ -96,7 +97,7 @@ option {
     text-decoration: none;
     font-size: 18px;
     margin-top: 30px;
-    margin-left: 320px;
+    margin-left: 250px;
     margin-bottom: 200px;
 }
 
