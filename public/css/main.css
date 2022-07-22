@@ -29,7 +29,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 7%;
-  padding-bottom: 6rem;
+  padding-bottom: 5.5rem;
 }
 
 #sec1 > h1 {
@@ -96,9 +96,11 @@ p {
   border:0;
   background-color: transparent;
   width: 1100px;
+  padding: 0;
 }
 
 /*----------Sección Géneros--------------------*/
+
 #generos {
   background-color: #e2eaf2;
   display: flex;
@@ -106,7 +108,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1%;
-  padding-top: 6rem;
+  padding-top: 6.6rem;
   padding-bottom: 10rem;
 }
 

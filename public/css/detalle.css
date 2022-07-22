@@ -5,7 +5,7 @@
 }
 .espacio{
     padding-top: 25px;
-    padding-left: 2rem;
+
 }
 
 .title-movie {
@@ -39,6 +39,18 @@
     color: #D7FF00;
     border: 0;
 }
+#btn-explore:hover {
+    background-color:#D7FF00;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 50px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.4rem;
+    color: #2603FB;
+    border: 0;
+}
 li{
 	list-style:none;
     font-size: 1.5rem;
@@ -52,18 +64,6 @@ tr {
 border: 0;
 color:#2603FB;
 background-color: transparent;
-}
-#btn-explore:hover {
-    background-color:#D7FF00;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 50px;
-    font-family: 'Secular One', sans-serif;
-    font-size: 1.4rem;
-    color: #2603FB;
-    border: 0;
 }
 
 tr:nth-child(odd) {
